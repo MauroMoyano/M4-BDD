@@ -3,7 +3,11 @@ const modelCharacter = require('./models/Character.js');
 const modelAbility = require('./models/Ability.js');
 const modelRole = require('./models/Role.js');
 
-const db = new Sequelize('postgres://franco:12345@localhost:5432/henry_sequelize', {
+const DB_USER = "postgres"
+const DB_PASSWORD = "A77aque77"
+const DB_HOST = "localhost:5432"
+
+const db = new Sequelize('postgres://DB_USER:DB_PASSWORD@DB_HOST/henry_sequelize', {
   logging: false,
 });
 
